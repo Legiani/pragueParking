@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		699983A626812F460029F261 /* ZonePolygons.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 699983A526812F460029F261 /* ZonePolygons.geojson */; };
+		699A349A26B95DD300F2ADBE /* PragueRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A349926B95DD300F2ADBE /* PragueRegion.swift */; };
+		699AB0F32683DDB8007B8861 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699AB0F22683DDB8007B8861 /* MapKit.framework */; };
+		699AB0F62683DFE4007B8861 /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699AB0F52683DFE4007B8861 /* PaymentHandler.swift */; };
+		699AB0F826847FA0007B8861 /* ApplePayPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699AB0F726847FA0007B8861 /* ApplePayPayment.swift */; };
+		699E6A9A26812C1800270028 /* ZoneGroupPolygons.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 699E6A9926812C1800270028 /* ZoneGroupPolygons.geojson */; };
+		69B640302680C10100DD188D /* pragueParkingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B6402F2680C10100DD188D /* pragueParkingApp.swift */; };
+		69B640322680C10100DD188D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B640312680C10100DD188D /* MainView.swift */; };
+		69B640342680C10300DD188D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69B640332680C10300DD188D /* Assets.xcassets */; };
+		69B640372680C10300DD188D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69B640362680C10300DD188D /* Preview Assets.xcassets */; };
+		69B640402680C1C000DD188D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 69B6403F2680C1C000DD188D /* Alamofire */; };
+		69B640422680C63A00DD188D /* MapSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B640412680C63A00DD188D /* MapSubView.swift */; };
+		69B64044268103AE00DD188D /* MapPoligon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B64043268103AE00DD188D /* MapPoligon.swift */; };
+		69B6404C2681072100DD188D /* Prague.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 69B6404B2681072100DD188D /* Prague.geojson */; };
+		69B6404E2681079500DD188D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B6404D2681079500DD188D /* Extension.swift */; };
+		69CFC6292681DA0C00C981F6 /* PragueLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CFC6282681DA0C00C981F6 /* PragueLayer.swift */; };
+		69CFC62B2681DA5100C981F6 /* ZoneGroupLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CFC62A2681DA5100C981F6 /* ZoneGroupLayer.swift */; };
+		69CFC62D2681DAA500C981F6 /* ZoneLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CFC62C2681DAA500C981F6 /* ZoneLayer.swift */; };
+		69CFC63026821EC500C981F6 /* MapSummarySubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CFC62F26821EC500C981F6 /* MapSummarySubView.swift */; };
+		69D0C25C268275630048F5B2 /* SearchSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D0C25B268275630048F5B2 /* SearchSubView.swift */; };
+		69D0C26126835C490048F5B2 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D0C26026835C490048F5B2 /* APIManager.swift */; };
+		69D0C264268362760048F5B2 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D0C262268362760048F5B2 /* APIKeys.swift */; };
+		69D0C26726836A340048F5B2 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D0C26626836A340048F5B2 /* APICall.swift */; };
+		69D0C26926836A900048F5B2 /* PriceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D0C26826836A900048F5B2 /* PriceList.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		699983A526812F460029F261 /* ZonePolygons.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ZonePolygons.geojson; sourceTree = "<group>"; };
+		699A349926B95DD300F2ADBE /* PragueRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PragueRegion.swift; sourceTree = "<group>"; };
+		699AB0F22683DDB8007B8861 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		699AB0F42683DDCD007B8861 /* pragueParking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pragueParking.entitlements; sourceTree = "<group>"; };
+		699AB0F52683DFE4007B8861 /* PaymentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
+		699AB0F726847FA0007B8861 /* ApplePayPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayPayment.swift; sourceTree = "<group>"; };
+		699E6A9926812C1800270028 /* ZoneGroupPolygons.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ZoneGroupPolygons.geojson; sourceTree = "<group>"; };
+		69B6402C2680C10100DD188D /* pragueParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pragueParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69B6402F2680C10100DD188D /* pragueParkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pragueParkingApp.swift; sourceTree = "<group>"; };
+		69B640312680C10100DD188D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		69B640332680C10300DD188D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69B640362680C10300DD188D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		69B640382680C10300DD188D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69B640412680C63A00DD188D /* MapSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSubView.swift; sourceTree = "<group>"; };
+		69B64043268103AE00DD188D /* MapPoligon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPoligon.swift; sourceTree = "<group>"; };
+		69B6404B2681072100DD188D /* Prague.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Prague.geojson; sourceTree = "<group>"; };
+		69B6404D2681079500DD188D /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		69CFC6282681DA0C00C981F6 /* PragueLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PragueLayer.swift; sourceTree = "<group>"; };
+		69CFC62A2681DA5100C981F6 /* ZoneGroupLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneGroupLayer.swift; sourceTree = "<group>"; };
+		69CFC62C2681DAA500C981F6 /* ZoneLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneLayer.swift; sourceTree = "<group>"; };
+		69CFC62F26821EC500C981F6 /* MapSummarySubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSummarySubView.swift; sourceTree = "<group>"; };
+		69D0C25B268275630048F5B2 /* SearchSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSubView.swift; sourceTree = "<group>"; };
+		69D0C26026835C490048F5B2 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		69D0C262268362760048F5B2 /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		69D0C263268362760048F5B2 /* APIKeys.template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.template.swift; sourceTree = "<group>"; };
+		69D0C26626836A340048F5B2 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		69D0C26826836A900048F5B2 /* PriceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceList.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69B640292680C10100DD188D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				699AB0F32683DDB8007B8861 /* MapKit.framework in Frameworks */,
+				69B640402680C1C000DD188D /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		699983A72681D9B00029F261 /* MapLayers */ = {
+			isa = PBXGroup;
+			children = (
+				69CFC6282681DA0C00C981F6 /* PragueLayer.swift */,
+				69CFC62A2681DA5100C981F6 /* ZoneGroupLayer.swift */,
+				69CFC62C2681DAA500C981F6 /* ZoneLayer.swift */,
+				699A349926B95DD300F2ADBE /* PragueRegion.swift */,
+			);
+			path = MapLayers;
+			sourceTree = "<group>";
+		};
+		699AB0F12683DDB8007B8861 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				699AB0F22683DDB8007B8861 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69B640232680C10100DD188D = {
+			isa = PBXGroup;
+			children = (
+				69B6402E2680C10100DD188D /* pragueParking */,
+				69B6402D2680C10100DD188D /* Products */,
+				699AB0F12683DDB8007B8861 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		69B6402D2680C10100DD188D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69B6402C2680C10100DD188D /* pragueParking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69B6402E2680C10100DD188D /* pragueParking */ = {
+			isa = PBXGroup;
+			children = (
+				699AB0F42683DDCD007B8861 /* pragueParking.entitlements */,
+				69D0C25F2683595F0048F5B2 /* APIManager */,
+				69D0C25E268358380048F5B2 /* MainView */,
+				699983A72681D9B00029F261 /* MapLayers */,
+				69B6402F2680C10100DD188D /* pragueParkingApp.swift */,
+				69B640312680C10100DD188D /* MainView.swift */,
+				69B640332680C10300DD188D /* Assets.xcassets */,
+				69B64045268103B900DD188D /* Model */,
+				69B640352680C10300DD188D /* Preview Content */,
+				69B640482681070600DD188D /* Support */,
+				69B6404D2681079500DD188D /* Extension.swift */,
+				69B640382680C10300DD188D /* Info.plist */,
+			);
+			path = pragueParking;
+			sourceTree = "<group>";
+		};
+		69B640352680C10300DD188D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				69B640362680C10300DD188D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		69B64045268103B900DD188D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				69B64043268103AE00DD188D /* MapPoligon.swift */,
+				69D0C26826836A900048F5B2 /* PriceList.swift */,
+				699AB0F726847FA0007B8861 /* ApplePayPayment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		69B640482681070600DD188D /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				699983A526812F460029F261 /* ZonePolygons.geojson */,
+				699E6A9926812C1800270028 /* ZoneGroupPolygons.geojson */,
+				69B6404B2681072100DD188D /* Prague.geojson */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		69D0C25E268358380048F5B2 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				69B640412680C63A00DD188D /* MapSubView.swift */,
+				69CFC62F26821EC500C981F6 /* MapSummarySubView.swift */,
+				69D0C25B268275630048F5B2 /* SearchSubView.swift */,
+				699AB0F52683DFE4007B8861 /* PaymentHandler.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		69D0C25F2683595F0048F5B2 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				69D0C262268362760048F5B2 /* APIKeys.swift */,
+				69D0C263268362760048F5B2 /* APIKeys.template.swift */,
+				69D0C26026835C490048F5B2 /* APIManager.swift */,
+				69D0C26626836A340048F5B2 /* APICall.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69B6402B2680C10100DD188D /* pragueParking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69B6403B2680C10300DD188D /* Build configuration list for PBXNativeTarget "pragueParking" */;
+			buildPhases = (
+				69B640282680C10100DD188D /* Sources */,
+				69B640292680C10100DD188D /* Frameworks */,
+				69B6402A2680C10100DD188D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pragueParking;
+			packageProductDependencies = (
+				69B6403F2680C1C000DD188D /* Alamofire */,
+			);
+			productName = pragueParking;
+			productReference = 69B6402C2680C10100DD188D /* pragueParking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69B640242680C10100DD188D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					69B6402B2680C10100DD188D = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 69B640272680C10100DD188D /* Build configuration list for PBXProject "pragueParking" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69B640232680C10100DD188D;
+			packageReferences = (
+				69B6403E2680C1C000DD188D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 69B6402D2680C10100DD188D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69B6402B2680C10100DD188D /* pragueParking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69B6402A2680C10100DD188D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69B640372680C10300DD188D /* Preview Assets.xcassets in Resources */,
+				699E6A9A26812C1800270028 /* ZoneGroupPolygons.geojson in Resources */,
+				69B6404C2681072100DD188D /* Prague.geojson in Resources */,
+				699983A626812F460029F261 /* ZonePolygons.geojson in Resources */,
+				69B640342680C10300DD188D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69B640282680C10100DD188D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69B6404E2681079500DD188D /* Extension.swift in Sources */,
+				699AB0F62683DFE4007B8861 /* PaymentHandler.swift in Sources */,
+				69CFC62B2681DA5100C981F6 /* ZoneGroupLayer.swift in Sources */,
+				69CFC6292681DA0C00C981F6 /* PragueLayer.swift in Sources */,
+				69CFC62D2681DAA500C981F6 /* ZoneLayer.swift in Sources */,
+				699A349A26B95DD300F2ADBE /* PragueRegion.swift in Sources */,
+				69D0C26126835C490048F5B2 /* APIManager.swift in Sources */,
+				69B640322680C10100DD188D /* MainView.swift in Sources */,
+				69D0C264268362760048F5B2 /* APIKeys.swift in Sources */,
+				69D0C26926836A900048F5B2 /* PriceList.swift in Sources */,
+				69CFC63026821EC500C981F6 /* MapSummarySubView.swift in Sources */,
+				699AB0F826847FA0007B8861 /* ApplePayPayment.swift in Sources */,
+				69B64044268103AE00DD188D /* MapPoligon.swift in Sources */,
+				69B640422680C63A00DD188D /* MapSubView.swift in Sources */,
+				69B640302680C10100DD188D /* pragueParkingApp.swift in Sources */,
+				69D0C25C268275630048F5B2 /* SearchSubView.swift in Sources */,
+				69D0C26726836A340048F5B2 /* APICall.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		69B640392680C10300DD188D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69B6403A2680C10300DD188D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69B6403C2680C10300DD188D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = pragueParking/pragueParking.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"pragueParking/Preview Content\"";
+				DEVELOPMENT_TEAM = SY5678U929;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = pragueParking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = parking.jbtest.pragueParking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69B6403D2680C10300DD188D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = pragueParking/pragueParking.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"pragueParking/Preview Content\"";
+				DEVELOPMENT_TEAM = SY5678U929;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = pragueParking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = parking.jbtest.pragueParking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69B640272680C10100DD188D /* Build configuration list for PBXProject "pragueParking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69B640392680C10300DD188D /* Debug */,
+				69B6403A2680C10300DD188D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69B6403B2680C10300DD188D /* Build configuration list for PBXNativeTarget "pragueParking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69B6403C2680C10300DD188D /* Debug */,
+				69B6403D2680C10300DD188D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		69B6403E2680C1C000DD188D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		69B6403F2680C1C000DD188D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69B6403E2680C1C000DD188D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 69B640242680C10100DD188D /* Project object */;
+}
